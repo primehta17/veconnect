@@ -16,7 +16,7 @@ function App() {
                 </ul>
             </div>
             <div className="nav-cta flex gap-4 w-full justify-center mt-4">
-                <a className="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="/Contact/">Contact us</a>
+                <a className="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="/">Contact us</a>
             </div>
         </div>
         <nav className="flex lg:w-full justify-between p-7">
@@ -34,7 +34,7 @@ function App() {
                 </ul>
             </div>
             <div className="nav-cta flex gap-4 ">
-                <a className="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="http://localhost:3000/"> Register Now <i class="bi bi-arrow-right"></i>
+                <a className="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="http://localhost:3001/"> Register Now <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
 
