@@ -9,6 +9,7 @@ class Register extends React.Component {
     super(props);
     this.state = {
       username: '',
+      email: '',
       password: '',
       confirm_password: ''
     };
@@ -20,6 +21,7 @@ class Register extends React.Component {
 
     axios.post('http://localhost:2000/register', {
       username: this.state.username,
+      email: this.state.email,
       password: this.state.password,
     }).then((res) => {
       swal({
@@ -54,6 +56,17 @@ class Register extends React.Component {
             value={this.state.username}
             onChange={this.onChange}
             placeholder="User Name"
+            required
+          />
+          <br /><br />
+          <TextField
+            id="standard-basic"
+            type="email"
+            autoComplete="off"
+            name="email"
+            value={this.state.email}
+            onChange={this.onChange}
+            placeholder="Email"
             required
           />
           <br /><br />

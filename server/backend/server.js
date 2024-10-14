@@ -116,7 +116,7 @@ app.post("/login", (req, res) => {
 /* register api */
 app.post("/register", (req, res) => {
   try {
-    if (req.body && req.body.username && req.body.password) {
+    if (req.body && req.body.username && req.body.email && req.body.password) {
 
       user.find({ username: req.body.username }, (err, data) => {
 
@@ -124,6 +124,7 @@ app.post("/register", (req, res) => {
 
           let User = new user({
             username: req.body.username,
+            email:req.body.email,
             password: req.body.password
           });
           User.save((err, data) => {

@@ -298,7 +298,7 @@ class Dashboard extends Component {
               name="discount"
               value={this.state.discount}
               onChange={this.onChange}
-              placeholder="Discount"
+              placeholder="Stock"
               required
             /><br /><br />
             <Button
@@ -377,7 +377,7 @@ class Dashboard extends Component {
               name="discount"
               value={this.state.discount}
               onChange={this.onChange}
-              placeholder="Discount"
+              placeholder="Stock"
               required
             /><br /><br />
             <Button
@@ -393,7 +393,6 @@ class Dashboard extends Component {
                 id="fileInput"
                 placeholder="File"
                 hidden
-                required
               />
             </Button>&nbsp;
             {this.state.fileName}
@@ -431,7 +430,7 @@ class Dashboard extends Component {
                 <TableCell align="center">Image</TableCell>
                 <TableCell align="center">Description</TableCell>
                 <TableCell align="center">Price</TableCell>
-                <TableCell align="center">Discount</TableCell>
+                <TableCell align="center">Stock</TableCell>
                 <TableCell align="center">Action</TableCell>
               </TableRow>
             </TableHead>
